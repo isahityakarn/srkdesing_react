@@ -174,6 +174,92 @@ function App() {
         </div>
       </section>
 
+      {/* Contact Us Section */}
+      <section id="contact" className="py-5" style={{background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'}}>
+        <div className="container">
+          <h2 className="text-center text-white fw-bold mb-5">Contact Us</h2>
+          <div className="row g-4">
+            {/* Contact Information */}
+            <div className="col-lg-6">
+              <div className="bg-white p-4 rounded shadow-lg h-100">
+                <h3 className="text-danger fw-bold mb-4">Get In Touch</h3>
+                <div className="mb-3">
+                  <div className="d-flex align-items-center mb-3">
+                    <div className="bg-danger text-white rounded-circle d-flex align-items-center justify-content-center" style={{width: '40px', height: '40px'}}>
+                      <i className="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div className="ms-3">
+                      <h6 className="mb-0 fw-bold">Address</h6>
+                      <p className="mb-0 text-muted">123 Fashion Street, Style City, SC 12345</p>
+                    </div>
+                  </div>
+                  <div className="d-flex align-items-center mb-3">
+                    <div className="bg-success text-white rounded-circle d-flex align-items-center justify-content-center" style={{width: '40px', height: '40px'}}>
+                      <i className="fas fa-phone"></i>
+                    </div>
+                    <div className="ms-3">
+                      <h6 className="mb-0 fw-bold">Phone</h6>
+                      <p className="mb-0 text-muted">+91 98765 43210</p>
+                    </div>
+                  </div>
+                  <div className="d-flex align-items-center mb-3">
+                    <div className="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center" style={{width: '40px', height: '40px'}}>
+                      <i className="fas fa-envelope"></i>
+                    </div>
+                    <div className="ms-3">
+                      <h6 className="mb-0 fw-bold">Email</h6>
+                      <p className="mb-0 text-muted">info@srkdesigns.com</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="mt-4">
+                  <h6 className="fw-bold mb-3">Follow Us</h6>
+                  <div className="d-flex gap-3">
+                    <button className="btn btn-outline-danger btn-sm rounded-circle" title="Follow us on Facebook">
+                      <i className="fab fa-facebook-f"></i>
+                    </button>
+                    <button className="btn btn-outline-danger btn-sm rounded-circle" title="Follow us on Instagram">
+                      <i className="fab fa-instagram"></i>
+                    </button>
+                    <button className="btn btn-outline-danger btn-sm rounded-circle" title="Connect with us on LinkedIn">
+                      <i className="fab fa-linkedin-in"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Contact Form */}
+            <div className="col-lg-6">
+              <div className="bg-white p-4 rounded shadow-lg h-100">
+                <h3 className="text-danger fw-bold mb-4">Send us a Message</h3>
+                <form>
+                  <div className="row g-3">
+                    <div className="col-md-6">
+                      <input type="text" className="form-control" placeholder="Your Name" required />
+                    </div>
+                    <div className="col-md-6">
+                      <input type="email" className="form-control" placeholder="Your Email" required />
+                    </div>
+                    <div className="col-12">
+                      <input type="text" className="form-control" placeholder="Subject" required />
+                    </div>
+                    <div className="col-12">
+                      <textarea className="form-control" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <div className="col-12">
+                      <button type="submit" className="btn btn-danger px-4 py-2 fw-bold rounded-pill">
+                        Send Message
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="bg-white border-top mt-5 py-4">
         <div className="container d-flex flex-column flex-md-row align-items-center justify-content-between">

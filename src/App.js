@@ -63,6 +63,9 @@ function App() {
               <li className="nav-item">
                 <a className="nav-link" href="#contact">Contact Us</a>
               </li>
+              <li className="nav-item">
+                <a className="nav-link btn btn-outline-danger ms-2 px-3" href="#signin">Sign In</a>
+              </li>
             </ul>
           </div>
         </div>

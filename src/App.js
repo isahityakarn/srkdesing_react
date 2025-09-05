@@ -146,7 +146,7 @@ function App() {
       </section>
 
       {/* Featured Products Section */}
-      <div className="container mb-4">
+      <div id="product" className="container mb-4">
         <h2 className="text-center text-danger mb-4">Featured Products</h2>
         {/* Product Grid */}
         <div className="row g-4 justify-content-center">

@@ -42,7 +42,10 @@ function App() {
       {/* Header & Navigation */}
       <nav className="navbar navbar-expand-lg navbar-light bg-white shadow-sm mb-4">
         <div className="container">
-          <a className="navbar-brand fw-bold text-danger fs-2" href="#home">SRKDesigns</a>
+          <a className="navbar-brand d-flex align-items-center" href="#home">
+            <img src={process.env.PUBLIC_URL + '/assets/logo.png'} alt="SRKDesigns Logo" style={{height: '40px', marginRight: '10px'}} />
+            <span className="fw-bold text-danger fs-2">SRKDesigns</span>
+          </a>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
@@ -84,6 +87,16 @@ function App() {
           ))}
         </div>
       </div>
+      {/* Footer */}
+      <footer className="bg-white border-top mt-5 py-4">
+        <div className="container d-flex flex-column flex-md-row align-items-center justify-content-between">
+          <div className="d-flex align-items-center mb-3 mb-md-0">
+            <img src={process.env.PUBLIC_URL + '/assets/logo.png'} alt="SRKDesigns Logo" style={{height: '40px', marginRight: '12px'}} />
+            <span className="fw-bold text-danger fs-5">SRKDesigns</span>
+          </div>
+          <div className="text-muted small">© {new Date().getFullYear()} SRKDesigns. All rights reserved.</div>
+        </div>
+      </footer>
     </div>
   );
 }

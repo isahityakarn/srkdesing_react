@@ -139,3 +139,16 @@ h1 {
     height: 200px;
   }
 }
+
+/* Sticky Navbar Styles */
+.navbar.sticky-top {
+  top: 0;
+  z-index: 1030;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar.sticky-top.scrolled {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+}
